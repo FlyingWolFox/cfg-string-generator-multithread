@@ -1,0 +1,3 @@
+[submodule "BlockingCollection"]
+	path = BlockingCollection
+	url = git@github.com:FlyingWolFox/BlockingCollection.git
