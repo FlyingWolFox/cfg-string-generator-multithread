@@ -1,6 +1,6 @@
 # cfg-string-generator-multithread
 
-A failed experiment to parallelize cfg-string-generator, since it didn't bring speed improvements (in half of the cases it's slower).
+A failed experiment to parallelize [cfg-string-generator](https://github.com/FlyingWolFox/cfg-string-generator), since it didn't bring speed improvements (in half of the cases it's slower).
 This implements three algorithms: dual containers, which doesn't need heavy thread synchronization, but it's memory intensive, controlled queue, which uses blocking queues to reduce memory usage, and free queue, which uses information on the derivations to know when to stop. Curiously free queue is slower than controlled queue, using more or less the same memory
 
 ## Tests
