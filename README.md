@@ -13,8 +13,8 @@ The most probably reason for the results is mutex contention with dequeuing and 
 
 ## It's fixable?
 
-Probably. Making the thread use bulk queuing and dequeuing should speed things up. In the case on dual container maybe use less moving/copying would improve performance, using more memory probably, but maybe the queues can be faster than a good version of this (it's teh case on the single threaded version).
+Probably. Making the thread use bulk queuing and dequeuing should speed things up. In the case on dual container maybe use less moving/copying would improve performance, using more memory probably, but maybe the queues can be faster than a good version of this (it's the case on the single threaded version). I may return and fix this someday
 
 ## Contributing
 
-If you want to try fix this yourself, the speed/memory test suit is ready. This repo contains both single and multi threaded code, but the first isn't synced with its repo and is, possibly, outdated. The code here is unpolished (actually I didn't test if the the multi threaded code generates correctly, but the output right). If you made a better version of this, feel free to make a pull request
+If you want to try fix this yourself, the speed/memory test suit is ready. This repo contains both single and multi threaded code, but the first isn't synced with its repo and is, possibly, outdated. The code here is unpolished (actually I didn't test if the multi threaded code generates correctly, but the output looks right). If you made a better version of this, feel free to make a pull request
